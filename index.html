@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags - Optimized for AdprofitX -->
+    <title>AdprofitX: AI-Powered Free Keyword Generator for SEO & PPC</title>
+    <meta name="description" content="Boost your ROI with AdprofitX, the best free AI keyword generator for Google Ads & SEO. Find profitable, low-competition keywords to maximize ad spend.">
+    <meta name="keywords" content="free keyword generator, ai keyword generator, ppc keyword tool, google ads keyword planner, adprofitx, keyword research tool, seo keyword tool, find profitable keywords">
+    <link rel="canonical" href="https://www.adprofitx.com/">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="AdprofitX: AI-Powered Free Keyword Generator for SEO & PPC">
+    <meta property="og:description" content="Generate profitable keywords for your Google Ads and SEO campaigns. Maximize your ROI with our powerful, free AI tool.">
+    <meta property="og:image" content="https://placehold.co/1200x630/0B2447/FFFFFF?text=AdprofitX">
+    <meta property="og:url" content="https://www.adprofitx.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AdprofitX Keyword Generator Tools">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AdprofitX: AI-Powered Free Keyword Generator for SEO & PPC">
+    <meta name="twitter:description" content="Generate profitable keywords for your Google Ads and SEO campaigns. Maximize your ROI with our powerful, free AI tool.">
+    <meta name="twitter:image" content="https://placehold.co/1200x600/0B2447/FFFFFF?text=AdprofitX">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/0B2447/FFFFFF?text=A" type="image/png">
+
+    <style>
+        /* --- Global Styles & Variables --- */
+        :root {
+            --primary-color: #0B2447; /* Deep Navy */
+            --secondary-color: #19A7CE; /* Bright Cyan */
+            --accent-color: #FFD700; /* Gold for emphasis */
+            --dark-color: #04152d;
+            --light-color: #f8f9fa;
+            --text-color: #555;
+            --font-family-body: 'Inter', sans-serif;
+            --font-family-heading: 'Poppins', sans-serif;
+            --container-width: 1140px;
+            --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family-body);
+            line-height: 1.7;
+            background-color: #fff;
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-family-heading);
+            color: var(--dark-color);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(2rem, 4vw, 2.8rem); text-align: center; }
+        h3 { font-size: 1.5rem; }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-bg {
+            background-color: var(--light-color);
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-family-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .main-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 8px 18px;
+            transition: color 0.3s ease;
+            font-weight: 600;
+        }
+
+        .main-nav a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .nav-cta {
+            background-color: var(--secondary-color);
+            color: #fff;
+            border-radius: 50px;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-cta:hover {
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(25, 167, 206, 0.4);
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+            color: #fff;
+        }
+        
+        .hero-section .main-headline {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .sub-headline {
+            font-size: 1.25rem;
+            max-width: 750px;
+            margin: 0 auto 2.5rem auto;
+            opacity: 0.9;
+        }
+
+        .keyword-tool-wrapper {
+            display: flex;
+            justify-content: center;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-md);
+            border-radius: var(--border-radius);
+        }
+
+        #seed-keyword-input {
+            width: 70%;
+            padding: 20px;
+            font-size: 1.1rem;
+            border: 1px solid #ccc;
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+            border: none;
+            outline: none;
+        }
+
+        .cta-button {
+            padding: 20px 35px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: var(--font-family-heading);
+            color: #fff;
+            background-color: var(--secondary-color);
+            border: none;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .cta-button:hover {
+            background-color: #1590b0;
+            transform: scale(1.05);
+        }
+        
+        .cta-button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+
+        .tool-note {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* --- Results Section --- */
+        #results-section {
+            padding-top: 40px;
+            display: none; /* Hidden by default */
+        }
+        .results-container {
+            background: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .results-table th, .results-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .results-table th {
+            background-color: var(--light-color);
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        .results-table tr:last-child td {
+            border-bottom: none;
+        }
+        .results-table tr:hover {
+            background-color: #f1faff;
+        }
+        .competition-badge {
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .competition-badge.low { background-color: #28a745; }
+        .competition-badge.medium { background-color: #ffc107; color: var(--dark-color); }
+        .competition-badge.high { background-color: #dc3545; }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 40px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error-message {
+            color: #dc3545;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: var(--border-radius);
+        }
+
+
+        /* --- AdSense Placeholder --- */
+        .adsense-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e9ecef;
+            color: #6c757d;
+            text-align: center;
+            border-radius: var(--border-radius);
+            margin: 40px auto;
+            min-height: 100px;
+            width: 100%;
+            max-width: 728px;
+            border: 2px dashed #ced4da;
+        }
+        
+        .adsense-placeholder.ad-slot-1 { margin-top: 60px; }
+        .adsense-placeholder.ad-slot-2 { margin: 80px auto; }
+        .adsense-placeholder.ad-slot-3 { margin-bottom: 40px; }
+
+
+        /* --- How It Works Section --- */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 4rem;
+        }
+        .step-card { 
+            padding: 30px; 
+            text-align: center;
+            background: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+        }
+        .step-number {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: var(--font-family-heading);
+            color: var(--secondary-color);
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        /* --- Features Section --- */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 4rem;
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .feature-icon {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+        .feature-item h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        /* --- Testimonial Section --- */
+        .testimonial-section { 
+            text-align: center; 
+            background: var(--primary-color);
+            color: #fff;
+        }
+        .testimonial-section h2 {
+            color: #fff;
+        }
+        blockquote {
+            max-width: 750px;
+            margin: 2rem auto 0 auto;
+            padding: 20px;
+            border: none;
+        }
+        blockquote p {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        blockquote cite {
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.1rem;
+            color: var(--accent-color);
+        }
+
+        /* --- FAQ Section --- */
+        .faq-container {
+            max-width: 800px;
+            margin: 4rem auto 0 auto;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .faq-question {
+            font-size: 1.2rem;
+            font-family: var(--font-family-body);
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            padding-right: 30px;
+            transition: color 0.3s ease;
+        }
+        .faq-question:hover {
+            color: var(--secondary-color);
+        }
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+        }
+        .faq-answer p { padding-top: 1rem; }
+
+        /* --- Footer --- */
+        .main-footer {
+            background-color: var(--dark-color);
+            color: #ccc;
+            padding: 60px 0 30px 0;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #444;
+        }
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 0.9rem;
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 992px) {
+            .main-header .container { flex-direction: column; gap: 1rem; }
+            .keyword-tool-wrapper { flex-direction: column; }
+            #seed-keyword-input, .cta-button { 
+                width: 100%; 
+                border-radius: var(--border-radius); 
+            }
+            #seed-keyword-input { margin-bottom: 10px; }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            section { padding: 60px 0; }
+            .footer-content { flex-direction: column; text-align: center; }
+            .footer-links { display: flex; flex-direction: column; gap: 10px; }
+            .results-table { font-size: 0.9rem; }
+            .results-table th, .results-table td { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="/" class="logo">AdprofitX<span>.</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact" class="nav-cta">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1 class="main-headline">The Ultimate AI Keyword Generator for SEO & PPC</h1>
+                <p class="sub-headline">Discover high-profit, low-competition keywords to dominate Google search and maximize your ad campaign ROI. Welcome to AdprofitX Keyword Generator Tools.</p>
+                <div class="keyword-tool-wrapper">
+                    <input type="text" id="seed-keyword-input" placeholder="Enter a topic, domain, or seed keyword..." aria-label="Seed Keyword Input">
+                    <button id="generate-btn" class="cta-button">Generate Keywords Free</button>
+                </div>
+                <p class="tool-note">100% Free & No Signup Required. Powered by AI.</p>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results-section">
+            <div class="container">
+                <div id="results-output">
+                    <!-- Loader and results table will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- AdSense Slot 1 -->
+        <div class="container">
+            <div class="adsense-placeholder ad-slot-1">
+                <p>Advertisement</p>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works-section section-bg">
+            <div class="container">
+                <h2>Your Path to Profit in 3 Simple Steps</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Enter Your Topic</h3>
+                        <p>Start with a seed keyword, your competitor's URL, or a general topic to explore.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Get AI-Powered Ideas</h3>
+                        <p>Our PPC keyword tool generates hundreds of related terms, questions, and long-tail variations.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Launch & Profit</h3>
+                        <p>Filter by intent, export your list, and use it to build highly profitable SEO and Google Ads campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2>The AdprofitX Advantage: More Than a Keyword Finder</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Profitable PPC Keywords</h3>
+                            <p>Specifically find keywords with commercial intent, perfect for maximizing your Google Ads spend.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Uncover SEO Opportunities</h3>
+                            <p>Identify low-competition, high-volume keywords to rank faster in organic search results.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Competitor Analysis</h3>
+                            <p>Enter a competitor's domain to see the keywords they are ranking for and find gaps in their strategy.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Find Question Keywords</h3>
+                            <p>Generate content that answers real user questions to capture featured snippets and voice search traffic.</p>
+                        </div>
+                    </div>
+                     <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Truly Free & Unlimited</h3>
+                            <p>Access premium-level keyword research without the high price tag. No limits, no trials, no kidding.</p>
+                        </div>
+                    </div>
+                     <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Clean & Fast Interface</h3>
+                            <p>No complex dashboards. Just a powerful, intuitive PPC & SEO keyword tool that gets you the data you need, fast.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AdSense Slot 2 -->
+        <div class="container">
+            <div class="adsense-placeholder ad-slot-2">
+                <p>Advertisement</p>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <section id="testimonial" class="testimonial-section">
+            <div class="container">
+                <h2>Trusted by Performance Marketers</h2>
+                <blockquote>
+                    <p>"The AdprofitX keyword generator is a game-changer. I found untapped keywords for a client's Google Ads campaign in minutes that our expensive tools missed. It's now my first stop for PPC keyword research."</p>
+                    <cite>– Mark Chen, PPC Specialist</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section section-bg">
+            <div class="container">
+                <h2>Your Keyword Research Questions, Answered</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="faq-question">How is this different from other free keyword generators?</h3>
+                        <div class="faq-answer">
+                            <p>AdprofitX is built for profitability. While other tools give you generic lists, our AI focuses on identifying keywords with high commercial intent, making it the ideal PPC keyword tool for advertisers and SEOs focused on ROI.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I use this for more than just Google Ads?</h3>
+                        <div class="faq-answer">
+                            <p>Absolutely! The keywords you'll find are perfect for SEO content strategy, blog topic ideation, YouTube video optimization, and understanding your market's search behavior. It's a comprehensive keyword research tool.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Is this keyword research tool truly free?</h3>
+                        <div class="faq-answer">
+                            <p>Yes, 100%. AdprofitX is committed to providing a powerful, completely free keyword generator. We support the tool through on-page advertising, so you get full access without any cost or limitations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+             <!-- AdSense Slot 3 -->
+            <div class="adsense-placeholder ad-slot-3">
+                <p>Advertisement</p>
+            </div>
+            <div class="footer-content">
+                <a href="/" class="logo">AdprofitX<span>.</span></a>
+                <div class="footer-links">
+                    <a href="/about">About Us</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 AdprofitX Keyword Generator Tools. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How is this different from other free keyword generators?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AdprofitX is built for profitability. While other tools give you generic lists, our AI focuses on identifying keywords with high commercial intent, making it the ideal PPC keyword tool for advertisers and SEOs focused on ROI."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I use this for more than just Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! The keywords you'll find are perfect for SEO content strategy, blog topic ideation, YouTube video optimization, and understanding your market's search behavior. It's a comprehensive keyword research tool."
+        }
+      },{
+        "@type": "Question",
+        "name": "Is this keyword research tool truly free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, 100%. AdprofitX is committed to providing a powerful, completely free keyword generator. We support the tool through on-page advertising, so you get full access without any cost or limitations."
+        }
+      }]
+    }
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // FAQ Accordion Logic
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const answer = item.querySelector('.faq-answer');
+                    const isActive = question.classList.contains('active');
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.querySelector('.faq-question').classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                        }
+                    });
+                    if (!isActive) {
+                        question.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    } else {
+                        question.classList.remove('active');
+                        answer.style.maxHeight = null;
+                    }
+                });
+            });
+
+            // AI Keyword Generator Logic
+            const generateBtn = document.getElementById('generate-btn');
+            const keywordInput = document.getElementById('seed-keyword-input');
+            const resultsSection = document.getElementById('results-section');
+            const resultsOutput = document.getElementById('results-output');
+            
+            // --- Gemini API Call Function ---
+            const callGeminiApi = async (prompt) => {
+                const apiKey = ""; // API key is handled by the environment
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                
+                // Define the desired JSON structure for the response
+                const schema = {
+                    type: "ARRAY",
+                    items: {
+                        type: "OBJECT",
+                        properties: {
+                            "keyword": { "type": "STRING" },
+                            "volume": { "type": "INTEGER" },
+                            "cpc": { "type": "NUMBER" },
+                            "competition": { "type": "STRING", "enum": ["Low", "Medium", "High"] }
+                        },
+                        required: ["keyword", "volume", "cpc", "competition"]
+                    }
+                };
+
+                const payload = {
+                    contents: [{ role: "user", parts: [{ text: prompt }] }],
+                    generationConfig: {
+                        responseMimeType: "application/json",
+                        responseSchema: schema
+                    }
+                };
+
+                // Exponential backoff for retries
+                let response;
+                let delay = 1000;
+                for (let i = 0; i < 5; i++) {
+                    try {
+                        response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+                        if (response.ok) {
+                            const result = await response.json();
+                             if (result.candidates && result.candidates.length > 0 && result.candidates[0].content && result.candidates[0].content.parts && result.candidates[0].content.parts.length > 0) {
+                                return JSON.parse(result.candidates[0].content.parts[0].text);
+                            } else {
+                                throw new Error("Invalid response structure from API.");
+                            }
+                        }
+                    } catch (error) {
+                        console.error(`Attempt ${i + 1} failed. Retrying in ${delay}ms...`);
+                        await new Promise(res => setTimeout(res, delay));
+                        delay *= 2;
+                    }
+                }
+                throw new Error("Failed to fetch data from the AI model after several retries.");
+            };
+            
+            // --- UI Update Functions ---
+            const showLoader = () => {
+                resultsOutput.innerHTML = '<div class="loader"></div>';
+            };
+
+            const showError = (message) => {
+                resultsOutput.innerHTML = `<div class="error-message">${message}</div>`;
+            };
+
+            const displayResults = (keywords) => {
+                if (!keywords || keywords.length === 0) {
+                    showError("No keywords were generated. Please try a different topic.");
+                    return;
+                }
+                
+                let tableHTML = `
+                    <div class="results-container">
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>Keyword</th>
+                                    <th>Monthly Volume</th>
+                                    <th>CPC (USD)</th>
+                                    <th>Competition</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                keywords.forEach(kw => {
+                    const competitionClass = kw.competition.toLowerCase();
+                    tableHTML += `
+                        <tr>
+                            <td>${kw.keyword}</td>
+                            <td>${kw.volume.toLocaleString()}</td>
+                            <td>$${kw.cpc.toFixed(2)}</td>
+                            <td><span class="competition-badge ${competitionClass}">${kw.competition}</span></td>
+                        </tr>
+                    `;
+                });
+
+                tableHTML += `</tbody></table></div>`;
+                resultsOutput.innerHTML = tableHTML;
+            };
+
+            // --- Main Event Listener ---
+            generateBtn.addEventListener('click', async () => {
+                const seedKeyword = keywordInput.value.trim();
+
+                if (!seedKeyword) {
+                    alert("Please enter a topic or keyword to begin.");
+                    return;
+                }
+
+                // Disable button and show loader
+                generateBtn.disabled = true;
+                generateBtn.textContent = 'Generating...';
+                resultsSection.style.display = 'block';
+                showLoader();
+                resultsSection.scrollIntoView({ behavior: 'smooth' });
+
+                try {
+                    // Create a detailed prompt for the AI
+                    const prompt = `Generate a list of 20 related keywords for the topic "${seedKeyword}". Include a mix of long-tail keywords, question-based keywords, and commercial intent keywords. For each keyword, provide realistic but mock data for monthly search volume (integer), CPC in USD (number), and competition level ('Low', 'Medium', or 'High').`;
+                    
+                    const keywords = await callGeminiApi(prompt);
+                    displayResults(keywords);
+
+                } catch (error) {
+                    console.error(error);
+                    showError("Sorry, we couldn't generate keywords at this time. Please try again later.");
+                } finally {
+                    // Re-enable button
+                    generateBtn.disabled = false;
+                    generateBtn.textContent = 'Generate Keywords Free';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
