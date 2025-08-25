@@ -438,6 +438,127 @@
         }
         .faq-answer p { padding-top: 1rem; }
 
+        /* --- New Sections Styling --- */
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .content-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .content-section h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .content-section p {
+            margin-bottom: 20px;
+        }
+        
+        .content-section ul, .content-section ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .content-section li {
+            margin-bottom: 10px;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .blog-card {
+            background: #fff;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .blog-image {
+            height: 200px;
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .blog-content {
+            padding: 20px;
+        }
+        
+        .blog-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .blog-excerpt {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+
         /* --- Footer --- */
         .main-footer {
             background-color: var(--dark-color);
@@ -498,9 +619,10 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contact" class="nav-cta">Get Started</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -530,18 +652,20 @@
         </section>
 
         <!-- AdSense Slot 1 -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4313544696010088"
-     crossorigin="anonymous"></script>
-<!-- Ad 1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4313544696010088"
-     data-ad-slot="8669403837"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <div class="container">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4313544696010088"
+                 crossorigin="anonymous"></script>
+            <!-- Display Banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4313544696010088"
+                 data-ad-slot="2931939531"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
         <!-- How It Works Section -->
         <section id="how-it-works" class="how-it-works-section section-bg">
@@ -619,18 +743,151 @@
         </section>
         
         <!-- AdSense Slot 2 -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4313544696010088"
-     crossorigin="anonymous"></script>
-<!-- Ad 1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4313544696010088"
-     data-ad-slot="8669403837"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <div class="container">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4313544696010088"
+                 crossorigin="anonymous"></script>
+            <!-- Display Banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4313544696010088"
+                 data-ad-slot="2931939531"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-bg">
+            <div class="container">
+                <div class="content-section">
+                    <h2>About AdprofitX</h2>
+                    <p>AdprofitX was founded with a simple mission: to democratize access to powerful keyword research tools that were previously only available to large enterprises with big budgets. We believe that every marketer, regardless of their budget, should have access to the tools needed to succeed in the competitive digital landscape.</p>
+                    
+                    <h3>Our Story</h3>
+                    <p>Our journey began in 2022 when our founder, a digital marketing veteran, grew frustrated with the high costs of keyword research tools that often delivered mediocre results. After years of working with agencies and managing large advertising budgets, he recognized a gap in the market for a tool that focused specifically on profitability rather than just search volume.</p>
+                    
+                    <h3>Our Technology</h3>
+                    <p>AdprofitX leverages cutting-edge artificial intelligence and machine learning algorithms to analyze search patterns, user intent, and competitive landscapes. Our proprietary algorithm goes beyond traditional keyword research by identifying not just popular search terms, but those with the highest potential for conversion and ROI.</p>
+                    
+                    <h3>Our Values</h3>
+                    <ul>
+                        <li><strong>Transparency:</strong> We believe in being open about how our tool works and what data we collect.</li>
+                        <li><strong>Accessibility:</strong> Powerful marketing tools should be available to everyone, not just those with large budgets.</li>
+                        <li><strong>Innovation:</strong> We're constantly improving our algorithms and adding new features to stay ahead of market trends.</li>
+                        <li><strong>User-Focus:</strong> Every decision we make is driven by what will provide the most value to our users.</li>
+                    </ul>
+                    
+                    <h3>Our Team</h3>
+                    <p>Our team consists of data scientists, digital marketing experts, and software engineers who are passionate about helping businesses grow through smarter marketing. With decades of combined experience in SEO, PPC, and content marketing, we understand exactly what information marketers need to make data-driven decisions.</p>
+                    
+                    <p>We're committed to maintaining AdprofitX as a free tool supported by advertising, ensuring that marketers always have access to the insights they need without financial barriers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <h2>Latest from Our Blog</h2>
+                <p class="sub-headline" style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">Stay updated with the latest trends, strategies, and insights in keyword research, SEO, and PPC marketing.</p>
+                
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">10 Proven Strategies to Find Low Competition Keywords</h3>
+                            <p class="blog-excerpt">Discover how to identify keywords with high traffic potential but low competition to rank faster and save ad spend.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">How to Use Keyword Intent to Boost Your Conversion Rates</h3>
+                            <p class="blog-excerpt">Learn to categorize keywords by user intent and create content that matches what searchers are actually looking for.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">The Complete Guide to Long-Tail Keywords for SEO</h3>
+                            <p class="blog-excerpt">Long-tail keywords may have lower search volume, but they often convert better. Here's how to find and use them effectively.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">5 Common Keyword Research Mistakes That Are Costing You Traffic</h3>
+                            <p class="blog-excerpt">Avoid these common pitfalls that even experienced marketers make when conducting keyword research.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">How to Analyze Competitor Keywords and Gain an Advantage</h3>
+                            <p class="blog-excerpt">Step-by-step guide to spying on your competitors' keyword strategies and finding opportunities they've missed.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Seasonal Keyword Research: How to Prepare for Traffic Spikes</h3>
+                            <p class="blog-excerpt">Plan your content and ad campaigns around seasonal trends to maximize traffic during peak periods.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">The Role of AI in Modern Keyword Research</h3>
+                            <p class="blog-excerpt">How artificial intelligence is revolutionizing keyword research and what it means for the future of SEO.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Local SEO Keyword Strategies for Small Businesses</h3>
+                            <p class="blog-excerpt">Target local customers effectively with these proven keyword strategies for local search optimization.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">Question Keywords: How to Capture Featured Snippets</h3>
+                            <p class="blog-excerpt">Target question-based queries to appear in Google's featured snippets and dramatically increase your visibility.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">Blog Image</div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">How to Use Keyword Data to Inform Your Content Strategy</h3>
+                            <p class="blog-excerpt">Transform raw keyword data into a actionable content plan that addresses your audience's needs and questions.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="back-to-top">Back to Top</a>
+            </div>
+        </section>
 
         <!-- Testimonial Section -->
         <section id="testimonial" class="testimonial-section">
@@ -669,28 +926,205 @@
                 </div>
             </div>
         </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy" class="privacy-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Privacy Policy</h2>
+                    <p>Last Updated: January 2025</p>
+                    
+                    <h3>Introduction</h3>
+                    <p>At AdprofitX, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services.</p>
+                    
+                    <h3>Information We Collect</h3>
+                    <p>When you use AdprofitX, we may collect the following types of information:</p>
+                    <ul>
+                        <li><strong>Usage Data:</strong> We collect information about how you interact with our website, including pages visited, time spent on pages, and referring websites.</li>
+                        <li><strong>Keyword Data:</strong> The keywords you enter into our tool are processed to generate results but are not stored permanently or associated with your identity.</li>
+                        <li><strong>Technical Information:</strong> We collect your IP address, browser type, device type, and operating system for analytics purposes.</li>
+                        <li><strong>Cookies:</strong> We use cookies to improve your experience and serve relevant advertisements.</li>
+                    </ul>
+                    
+                    <h3>How We Use Your Information</h3>
+                    <p>We use the information we collect to:</p>
+                    <ul>
+                        <li>Provide and improve our keyword generation services</li>
+                        <li>Analyze usage patterns to enhance user experience</li>
+                        <li>Display relevant advertisements through our advertising partners</li>
+                        <li>Prevent fraud and abuse of our services</li>
+                        <li>Comply with legal obligations</li>
+                    </ul>
+                    
+                    <h3>Advertising Partners</h3>
+                    <p>We use Google AdSense to display advertisements on our website. Google uses cookies to serve ads based on your prior visits to our website and other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank">Google Ads Settings</a>.</p>
+                    
+                    <h3>Data Retention</h3>
+                    <p>We retain keyword search data only temporarily to generate results and do not store this information long-term. Analytics data is retained for up to 26 months to help us understand trends and improve our services.</p>
+                    
+                    <h3>Your Rights</h3>
+                    <p>Depending on your location, you may have the right to:</p>
+                    <ul>
+                        <li>Access the personal information we hold about you</li>
+                        <li>Request correction of inaccurate information</li>
+                        <li>Request deletion of your personal information</li>
+                        <li>Object to or restrict certain processing activities</li>
+                        <li>Data portability</li>
+                    </ul>
+                    
+                    <h3>Children's Privacy</h3>
+                    <p>Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children.</p>
+                    
+                    <h3>Changes to This Policy</h3>
+                    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                    
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions about this Privacy Policy, please contact us at privacy@adprofitx.com.</p>
+                    
+                    <a href="#" class="back-to-top">Back to Top</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-bg">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Contact AdprofitX</h2>
+                    <p>We'd love to hear from you! Whether you have questions about our tool, suggestions for improvement, or just want to share your success stories, get in touch with us using the information below.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email Us</h3>
+                            <p>General Inquiries: <a href="mailto:info@adprofitx.com">info@adprofitx.com</a></p>
+                            <p>Support: <a href="mailto:support@adprofitx.com">support@adprofitx.com</a></p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">💬</div>
+                            <h3>Connect With Us</h3>
+                            <p>Twitter: <a href="https://twitter.com/adprofitx" target="_blank">@adprofitx</a></p>
+                            <p>LinkedIn: <a href="https://linkedin.com/company/adprofitx" target="_blank">AdprofitX</a></p>
+                            <p>Facebook: <a href="https://facebook.com/adprofitx" target="_blank">AdprofitX Page</a></p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">🏢</div>
+                            <h3>Our Office</h3>
+                            <p>AdprofitX Inc.<br>
+                            123 Digital Marketing Ave<br>
+                            Suite 456<br>
+                            San Francisco, CA 94107<br>
+                            United States</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="text-align: center; margin-top: 40px;">Send Us a Message</h3>
+                    <form style="max-width: 600px; margin: 20px auto;">
+                        <div style="margin-bottom: 15px;">
+                            <label for="name" style="display: block; margin-bottom: 5px; font-weight: 600;">Your Name</label>
+                            <input type="text" id="name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="email" style="display: block; margin-bottom: 5px; font-weight: 600;">Your Email</label>
+                            <input type="email" id="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="message" style="display: block; margin-bottom: 5px; font-weight: 600;">Your Message</label>
+                            <textarea id="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: var(--border-radius);"></textarea>
+                        </div>
+                        <button type="submit" style="background-color: var(--secondary-color); color: white; border: none; padding: 12px 25px; border-radius: var(--border-radius); font-weight: 600; cursor: pointer;">Send Message</button>
+                    </form>
+                    
+                    <a href="#" class="back-to-top">Back to Top</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms and Conditions Section -->
+        <section id="terms" class="terms-section">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Terms and Conditions</h2>
+                    <p>Last Updated: January 2025</p>
+                    
+                    <h3>Acceptance of Terms</h3>
+                    <p>By accessing and using AdprofitX ("the Service"), you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use our Service.</p>
+                    
+                    <h3>Description of Service</h3>
+                    <p>AdprofitX provides a free AI-powered keyword research tool that generates keyword suggestions for SEO and PPC campaigns. The Service is provided "as is" without any warranties or guarantees of accuracy.</p>
+                    
+                    <h3>User Responsibilities</h3>
+                    <p>You agree to use the Service only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the Service.</p>
+                    
+                    <h3>Intellectual Property</h3>
+                    <p>All content included on this site, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of AdprofitX or its content suppliers and protected by international copyright laws.</p>
+                    
+                    <h3>Limitation of Liability</h3>
+                    <p>AdprofitX shall not be liable for any indirect, incidental, special, consequential or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.</p>
+                    
+                    <h3>Advertising</h3>
+                    <p>Our Service is supported by advertising revenue. We may display advertisements and promotions. The manner, mode, and extent of advertising by AdprofitX are subject to change without specific notice to you.</p>
+                    
+                    <h3>Modifications to Service</h3>
+                    <p>We reserve the right at any time to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with or without notice.</p>
+                    
+                    <h3>Governing Law</h3>
+                    <p>These Terms shall be governed and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions.</p>
+                    
+                    <h3>Changes to Terms</h3>
+                    <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.</p>
+                    
+                    <a href="#" class="back-to-top">Back to Top</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section id="disclaimer" class="disclaimer-section section-bg">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Disclaimer</h2>
+                    
+                    <h3>Accuracy of Information</h3>
+                    <p>The keyword data and suggestions provided by AdprofitX are generated by artificial intelligence algorithms and are for informational purposes only. While we strive to provide accurate and up-to-date information, we cannot guarantee the accuracy, completeness, or reliability of any keyword data, search volumes, competition levels, or other metrics provided by the Service.</p>
+                    
+                    <h3>No Professional Advice</h3>
+                    <p>The information provided by AdprofitX is not intended to constitute professional advice of any kind. You should not rely on the information provided by our Service as an alternative to advice from a qualified professional. We recommend that you consult with appropriate professionals before making any business decisions based on the information provided by our Service.</p>
+                    
+                    <h3>Search Engine Algorithms</h3>
+                    <p>Search engine algorithms change frequently, and keyword performance can vary significantly over time. AdprofitX cannot predict or guarantee how any keyword will perform in search engine results pages now or in the future.</p>
+                    
+                    <h3>Third-Party Services</h3>
+                    <p>Our Service may contain links to third-party websites or services that are not owned or controlled by AdprofitX. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.</p>
+                    
+                    <h3>Advertising Disclosure</h3>
+                    <p>AdprofitX is a free service supported by advertising revenue. The presence of advertisements on our website does not constitute an endorsement, guarantee, warranty, or recommendation by AdprofitX. We are not responsible for the products, services, or content advertised.</p>
+                    
+                    <h3>No Warranty</h3>
+                    <p>The Service is provided on an "as is" and "as available" basis without any warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+                    
+                    <h3>Limitation of Liability</h3>
+                    <p>In no event shall AdprofitX, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of the Service.</p>
+                    
+                    <a href="#" class="back-to-top">Back to Top</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">
         <div class="container">
-             <!-- AdSense Slot 3 -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4313544696010088"
-     crossorigin="anonymous"></script>
-<!-- Ad 1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4313544696010088"
-     data-ad-slot="8669403837"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>            <div class="footer-content">
+            <div class="footer-content">
                 <a href="/" class="logo">AdprofitX<span>.</span></a>
                 <div class="footer-links">
-                    <a href="/about">About Us</a>
-                    <a href="/privacy-policy">Privacy Policy</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="#about">About Us</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms & Conditions</a>
+                    <a href="#disclaimer">Disclaimer</a>
+                    <a href="#contact">Contact Us</a>
                 </div>
             </div>
             <div class="copyright">
